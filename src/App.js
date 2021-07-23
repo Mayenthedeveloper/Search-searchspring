@@ -84,6 +84,7 @@ function App() {
             Search
           </button>
         </form>
+        {/* <SearchBar /> */}
         <div>
           <div className="pagination">
             {previousPage > 0 ? <div> Prev </div> : <div></div>}
@@ -107,6 +108,7 @@ function App() {
             )}
             {nextPage > 0 ? <div> Next </div> : <div></div>}
           </div>
+          {/* <PagePagination /> */}
           <div className="resultsDisplay">
             {results != null ? (
               results.map((item) => (
