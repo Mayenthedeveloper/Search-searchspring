@@ -33,7 +33,7 @@ const Pagination = () => {
   }, [search, setCurrentPage]);
 
   return (
-    <div className="pagination">
+    <div className="pagination" key={pages.id}>
       {previousPage > 0 ? <div> Prev </div> : <div></div>}
       {pages.length > 0 ? (
         pages.map((pageNumber) => {
